@@ -9,8 +9,6 @@
 
     --color-quaterny:#9A1750;
     --color-quinary:#EE4C7C;
-    
-
 }
 
 
@@ -23,15 +21,38 @@
 }
 
 html{
-    font-size: 62.5%;
+    @include respond(desktop-large){
+        font-size: 95%;
+    }
+
+    @include respond(desktop){
+        font-size: 90%;
+    }
+
+    @include respond(tab-land){
+        font-size: 80%;
+    }
+
+    @include respond(tab-port){
+        font-size: 70%;
+    }
+
+    @include respond(mobile){
+        font-size: 62.5%;
+    }
 }
 
 body{
     box-sizing: border-box;
-    font-family:var(--font-primary);
+    font-family:var(--font-primary) !important;
     font-weight: 300;
     line-height: 1.6;
     color:var(--color-primary);
     
     padding: 1rem;      //padding is here for testing purposes may be adjusted later
+}
+
+::selection{
+    background-color: var(--color-quinary);
+    color: white;
 }

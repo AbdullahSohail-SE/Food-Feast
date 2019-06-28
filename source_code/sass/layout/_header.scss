@@ -1,4 +1,5 @@
-.header{
-    background-color: var(--color-primary);
-    grid-column: start/end;
+.header-contact{
+    background-image: url(../../media/Images/gallery4.jpg);
+    background-image: linear-gradient(120deg , var(--color-quinary) , var(--color-tertiary) , var(--color-quaterny)) ;
+    background-size: cover;
 }

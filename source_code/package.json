@@ -12,7 +12,12 @@
     "compress-bootstrap:css": "node-sass css/vendors/bootstrap/bootstrap.prefix.css css/bootstrap.css --output-style compressed",
     "build-bootstrap:css": "npm-run-all compile-bootstrap-basics:sass compile-bootstrap-grid:sass compile-bootstrap-reboot:sass concat-bootstrap:css prefix-bootstrap:css compress-bootstrap:css",
   
-    "compile-index-main:scss":"node-sass sass/index_main.scss css/index.css -w"
+    "watch-index-main:scss":"node-sass sass/index_main.scss css/index-main.css -w",
+    "compile-index-main:scss":"node-sass sass/index_main.scss css/index-main.css",
+
+    "watch-contact-main:scss":"node-sass sass/contact_main.scss css/contact-main.css -w",
+    "compile-contact-main:scss":"node-sass sass/contact_main.scss css/contact-main.css"
+
   },
   "author": "//Abdullah Sohail ++++++++++++++ //Anas Baig",
   "license": "ISC",

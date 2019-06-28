@@ -1,0 +1,12 @@
+.dropdown{
+    &-menu{
+        width: 100%;
+    }
+
+    &-item{
+        &:hover{
+            background-color: var(--color-secondary) !important;
+            cursor: pointer;
+        }
+    }
+}
